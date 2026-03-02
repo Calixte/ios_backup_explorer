@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    width: 1024px;
+    margin: auto;
+}
+
+header {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px grey solid;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 4px;
+}
+
+.btn:hover {
+    background-color: lightgrey;
+}
+
+.file-type-filter {
+    position: relative;
+}
+
+.file-type-filter div {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+}
+
+.file-type-filter:hover div {
+    display: block;
+}
+
+.file-input-button label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+input {
+    display: none;
+}
+
+.tip {
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+details::details-content {
+    padding-left: 20px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+#mbdb-entries {
+    width: 100%;
+}
+
+#file-explorer {
+    display: flex;
+    align-items: stretch
+}
+
+select {
+    display: block;
+    min-height: 300px;
+}

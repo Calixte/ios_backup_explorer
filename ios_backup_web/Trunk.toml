@@ -1,0 +1,7 @@
+[watch]
+ignore = ["./sw.js"]
+
+[[hooks]]
+stage = "pre_build"
+command = "npx"
+command_arguments = ["esbuild", "sw.ts", "--bundle", "--outfile=sw.js", "--format=esm", "--minify"]
